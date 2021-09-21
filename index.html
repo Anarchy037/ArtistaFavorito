@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- La configuración de idioma (Hebreo, Chino) , caracteres especiales (tildes, simbolos @&, la ñ)  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Navegadores - Internet explorer - Edge Viejo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ayuda que en el viewport se ajuste el contenido desde un inicio (más no es total responsivo - dispositivos etc -->
+    <title>Artista Favorito</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+
+  <body>
+    <!--- Las secciones en un Trabajo HTML.. La semantica: 
+    <header> (encabezado) 
+     <nav> (navegacion) 
+      <section> (seccion, contenido,) ; <article> (esto son los elementos de la seccion, contenido)
+        <aside> (seccion secundaria)
+          <footer> (pie de pagina) --->
+
+    <header>
+      <div class="logo">
+        <img
+          class="imagen1"
+          src="Imagenes/Logo From Mac.png"
+          alt="imagen1"
+          width="auto"
+          height="200px"
+        />
+      </div>
+
+      <nav>
+        <ul class="Menu">
+          <li class="navegacion"><a href="#section1"> BIO </a></li>
+          <li class="navegacion"><a href="#section2"> MUSIC </a></li>
+          <li class="navegacion"><a href="#section3"> VIDEOS </a></li>
+          <li class="navegacion">
+            <a href="https://www.youtube.com/c/eminem/featured" target="_blank">
+              YOUTUBE
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seccion parallax -->
+
+    <section>
+      <article>
+        <div class="Parallax">
+          <div class="tituloParallax">
+            <h2>
+              Revival
+              <!--  Contenedor en linea -->
+            </h2>
+            <span class="parrafoParallax">
+              <a href="#section2">Get Now!</a>
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <div class="informacion">
+          <p>
+            <span id="section1" class="tituloEminem"> Who is Eminem?</span>
+            <br />
+            <br />
+            <br />
+            Marshall Bruce Mathers III (born October 17, 1972), known
+            professionally as Eminem (/ˌɛmɪˈnɛm/; formerly stylized as EMINƎM),
+            is an American rapper, songwriter, and record producer. Eminem is
+            among the best-selling music artists of all time, with estimated
+            worldwide sales of over 220 million records. He is credited with
+            popularizing hip hop in Middle America and is critically acclaimed
+            as one of the greatest rappers of all time. Eminem made his debut in
+            the film industry with the musical drama film 8 Mile (2002), playing
+            a fictionalized version of himself, and his track "Lose Yourself"
+            from its soundtrack won the Academy Award for Best Original Song,
+            making him the first hip hop artist ever to win the award.[4] Eminem
+            has made cameo appearances in the films The Wash (2001), Funny
+            People (2009) and The Interview (2014) and the television series
+            Entourage (2010). He has also developed other ventures, including
+            Shady Records, a joint venture with manager Paul Rosenberg, which
+            helped launch the careers of artists such as 50 Cent, Yelawolf and
+            Obie Trice, among others.
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <span class="titulo2">
+              The best-selling music artist in the United States
+            </span>
+
+            <br />
+            <br />
+            <br />
+
+            of the 2000s and the best-selling male music artist in the United
+            States of the 2010s, third overall. Billboard named him the "Artist
+            of the Decade (2000–2009)". The Marshall Mathers LP, The Eminem
+            Show, "Lose Yourself", "Love the Way You Lie" and "Not Afraid" have
+            all been certified Diamond or higher by the Recording Industry
+            Association of America (RIAA).[5] Rolling Stone has included him in
+            its lists of the 100 Greatest Artists of All Time and the 100
+            Greatest Songwriters of All Time. He has won numerous awards,
+            including 15 Grammy Awards, eight American Music Awards, 17
+            Billboard Music Awards, an Academy Award and an MTV Europe Music
+            Global Icon Award. He has had ten number-one albums on the Billboard
+            200—which all consecutively debuted at number one on the chart,
+            making him the first artist to achieve this[6]—and five number-one
+            singles on the Billboard Hot 100.[7]
+          </p>
+
+          <img src="Imagenes/Large.jpg" alt="eminem2" />
+        </div>
+      </article>
+    </section>
+
+    <section id="section2" class="contentMusic">
+      <h2>MUSIC</h2>
+      <!--  -->
+      <div class="container">
+        <div class="card">
+          <img
+            src="../Proyecto, 1ra semana/Imagenes/album1.jpg"
+            alt="album1"
+            onclick="nombreAlbum1()"
+          />
+          <h4>Godzilla</h4>
+          <p>July 30th, 2021</p>
+          <a href="#"> Read more </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="../Proyecto, 1ra semana/Imagenes/album2.jpeg"
+            alt="album2"
+            onclick="nombreAlbum2()"
+          />
+          <h4>Recovery</h4>
+          <p>August 24th, 2018</p>
+          <a href="#"> Read more </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="../Proyecto, 1ra semana/Imagenes/album3.jpg"
+            alt="album3"
+            onclick="nombreAlbum3()"
+          />
+          <h4>Kamikase</h4>
+          <p>December 4th, 2004</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container">
+          <div class="card">
+            <img
+              src="../Proyecto, 1ra semana/Imagenes/album4.jpg"
+              alt="album4"
+              onclick="nombreAlbum4()"
+            />
+            <h4>Encore</h4>
+            <p>August 20th, 2010</p>
+            <a href="#">Read more</a>
+          </div>
+
+          <div class="card">
+            <img
+              src="../Proyecto, 1ra semana/Imagenes/album5.jpg"
+              alt="album5"
+              onclick="nombreAlbum5()"
+            />
+            <h4>Revival</h4>
+            <p>December 1st, 2001</p>
+            <a href="#">Read more</a>
+          </div>
+
+          <div class="card">
+            <img
+              src="../Proyecto, 1ra semana/Imagenes/albumextra.jpg"
+              alt="album6"
+              onclick="nombreAlbum6()"
+            />
+            <h4>Infinite</h4>
+            <p>October 3rd, 2015</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <div class="videos">
+        <div class="iframeprincipal">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_Yhyp-_hX2s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="iframes">
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/XTO4Q8bebJ4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/gLMo7_VXU_s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="imagensection">
+          <a href="https://www.youtube.com/c/eminem/videos" target="_blank"
+            ><img src="Imagenes/Youtube123.jpg" alt="YouTube"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Pie de pagina -->
+
+    <footer>
+      <div class="final">
+        <p>© 2021 Darkroom/Interscope Records</p>
+      </div>
+    </footer>
+
+    <script src="../Proyecto, 1ra semana/Script.js/Script.js"></script>
+  </body>
+</html>

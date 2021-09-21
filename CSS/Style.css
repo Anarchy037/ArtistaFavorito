@@ -1,0 +1,294 @@
+body {
+    background-color: whitesmoke;
+    /* background-color: #806c6c;  */
+    background: 0px auto;
+    margin: 0px 150px 0px 150px;
+    /* En este link puedes buscar todas las tipografias https://fonts.google.com/ para las paginas, textos, titulos, etc*/
+    font-family: 'Teko', sans-serif;
+    height: 3529px;
+}
+
+/* Encabezado */
+
+.logo { /* Encabezado de titulo principal */
+    background-color: white;
+    margin: 0  auto;
+    width: auto;
+    display:block;    
+
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.imagen1 {
+    margin: auto;
+    width: 500px;
+    display: block;
+}
+
+nav { 
+    text-align: center;
+    list-style: none;
+    font-size: 24px;
+    padding: 20px 0px 20px 0px;
+}  
+
+/* MENU  */ 
+.Menu {
+    display: inline-flex;
+    list-style: none;
+    margin: 0% 180px 0px 150px;
+}
+
+.navegacion {
+    padding: 10px 50px 10px 50px;
+  
+}
+
+/* Selector Pseudo clases*/
+.navegacion:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Selector descendiente */ 
+.navegacion a{
+   text-decoration: none;
+   color: rgb(8, 8, 8);
+}
+
+/* Modificando Parallax */
+
+.Parallax {  /* Contenedor */
+background-image: url(../Imagenes/Parallax.jpg);
+min-height: 1000px;
+background-repeat: no-repeat;
+background-size: content;
+background-position: center;
+background-attachment: fixed; /* fondo estatico */
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-bottom: 50px;
+}
+
+div.tituloParallax h2 {
+   font-size: 2cm;
+   color: whitesmoke;
+   font-weight: 650; /* grosor de letra */
+   letter-spacing: 2px;
+   text-align: center;
+   margin-bottom: 0px;
+}
+
+.parrafoParallax {
+    border: 1px solid whitesmoke;   
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.parrafoParallax:hover{
+
+    background-color: white;
+    opacity: 0.7;
+}
+
+.parrafoParallax a{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.parrafoParallax a:hover {
+    color: black;
+}
+
+
+
+/* INFO - BIO */
+
+.informacion {/* BIO */
+    /* Inline-flex vuelve el contenido flexible en linea, e inline block el contenido respeta la altura y ancho pero es mas independientet en linea*/
+  display: inline-flex; 
+  padding-top: 90px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-top: 1px solid #000000;
+  border-width: 100%;
+  
+}
+
+.informacion p{
+    color: #020202;
+    max-width: 50%;
+    margin: 0px;
+    /* align-self: alinea los elementos dentro de un contenedor, y los alinea al centro */
+    align-self: center;
+    padding-left: 50px;
+    /* establece la altura entre lineas de parrafos */
+    line-height: 25px;
+
+}
+
+.tituloEminem {
+    letter-spacing: 1.5px;
+    font-size: 80px;
+    font-weight: 680;
+}
+
+.titulo2 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
+.informacion img { /* Bio Imagen */
+  max-width: 40%;
+  height: 60%;
+  margin: 40px;
+  padding: 0px 10px;
+}
+
+
+
+/*  MUSIC SECTIOM */
+
+.contentMusic {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    line-height: 2px;
+
+    /* border-top: 1px solid white;
+    border-width: 100%; */
+    margin-bottom: 120px;
+    
+}
+
+.contentMusic h2 {
+    margin: 100px 0px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    /* background-color: #fdfdfd; */
+
+    padding: 45px 45%;  
+    letter-spacing: 4px;
+    text-decoration: overline 1px rgb(0, 0, 0);
+
+    border-bottom: 1px solid #000000;}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.container .card {
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: o 2px 2px rgba (0, 0, 0, 0.2);
+    /* Desborda el contenido - oculta los sobrantes */
+    overflow: hidden;
+    margin: 0 10px;
+    text-align: center;
+    align-items: center;
+
+    /* Transicion */
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    /*  Mi elemnto se translada en Y -15 px */
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #00000033;
+}
+
+
+.container .card img {
+    width: 380px;
+    height: 350px;
+}
+
+.container .card h4{
+    font-size: 25px;
+    font-weight: 450;
+    color: #000000;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 30px ;
+    font-weight: 600;
+    color: #000000;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2c6161;
+}
+
+/* VIDEOS SECTION */
+
+.videos {
+    margin: 80px 0px;
+}
+
+.imagensection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 35px;
+}
+
+.imagensection img {
+    width: 280px;
+    height: 140px;
+    /* filter: brightness(1.1);
+    mix-blend-mode: multiply; */
+    margin: 100px 0px 5px 0px;
+}
+
+.iframeprincipal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.iframes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iframes iframe {
+    margin-top: 15px;
+}
+
+
+/* Footer */
+.final {
+    background-color: #1f1e1e;
+    min-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
